@@ -200,7 +200,10 @@ Then the loudness values are normalized, as well as centroid values in order to 
 For more check the [source code](src/Analyzer.js).
 
 ## UI
-The UI is made using part of the Ableton Max externals (like dials, and gain control) but mostly using JSUI, an external that allows to draw interactive elements on screen. 
+The UI is made using part of the Ableton Max externals (like dials, and gain control) but mostly using JSUI, an external that allows to draw interactive elements on screen. It can use 2 different graphic frameworks, sketch and mgraphics. I chose to use the second one as it renders in a better quality and performance, more info can be found here: 
+[MGraphics](http://max-javascript-reference.tim-schenk.de/symbols/MGraphics.html)
+[Sketch](http://max-javascript-reference.tim-schenk.de/symbols/#gsc.tab=0)
+
 By dragging on the interface you can choose which slice to pass to the granulator, or you can do it automatically by switchin the LFO (on / off) that has a variable speed.
 
 ![](imgs/Schermata%202022-10-25%20alle%2000.29.32.png)
