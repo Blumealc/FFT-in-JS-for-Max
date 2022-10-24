@@ -195,7 +195,13 @@ for (i=0; i<frames; i++) {
 }
 ```
 
-Then the loudness values are normalized, as well as centroid values in order to be shown by the JSUI object.  By dragging on the interface you can choose which slice to pass to the granulator, or you can do it automatically by switchin the LFO (on / off).
+Then the loudness values are normalized, as well as centroid values in order to be shown by the JSUI object.  
+
+For more check the [source code](src/Analyzer.js).
+
+## UI
+The UI is made using part of the Ableton Max externals (like dials, and gain control) but mostly using JSUI, an external that allows to draw interactive elements on screen. 
+By dragging on the interface you can choose which slice to pass to the granulator, or you can do it automatically by switchin the LFO (on / off) that has a variable speed.
 
 ![](imgs/Schermata%202022-10-25%20alle%2000.29.32.png)
 
@@ -203,7 +209,11 @@ The "Threshold" value allows to adjust the onset trigger threshold, and by click
 
 ![](imgs/Schermata%202022-10-25%20alle%2000.31.10.png)
 
-The grainulator algoritmh:
+For more check the [source code](src/JSUI.js).
+
+## Audio
+
+The grainulator algorithm accept samples with 30s max duration and is made using GenExpr:
 
 ``` c
 readbf(x, bff, wndw, rl, rr, chns, st, end) {

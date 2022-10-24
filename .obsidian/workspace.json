@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#SliceCream",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -140,6 +139,6 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "37b99f8b8b6dbd80",
+  "active": "2e44e1ffe4fe2b22",
   "lastOpenFiles": []
 }
